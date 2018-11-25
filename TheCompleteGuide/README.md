@@ -1,35 +1,54 @@
 # The Complete Guide
 
-Getting Started
+## Getting Started
 1. Install node.js
-2. npm install -g @angular/cli@latest
-3. ng new my-dream-app
-4. cd my-dream-app
-5. ng serve
+2. Run commands
+```sh
+npm install -g @angular/cli@latest
+ng new my-dream-app
+cd my-dream-app
+ng serve
+```
 
-Editing the First App
+## Editing the First App
 1. Install Visual Studio Code
 2. Edit the First App
-- app.component.html
-<input type="text" [(ngModel)]="name">
-<p>{{name}}</p>
-- app.modules.ts
-a. add import
-import {FormsModule} from '@angular/forms';
-b. add in imports
-imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule
-- app.components.ts
-export class AppComponent {
-  name = 'AKO';
-}
 
-A Basic Project Setup using Bootstrap for Styling
+- app.component.html
+```sh
+ <input type="text" [(ngModel)]="name">
+ <p>{{name}}</p>
+```
+
+- app.modules.ts
+  
+a. add import
+```sh
+import {FormsModule} from '@angular/forms';
+```
+
+b. add in imports
+```sh
+ imports: [
+            BrowserModule,
+            AppRoutingModule,
+            FormsModule
+```
+- app.components.ts
+```sh
+ export class AppComponent {
+   name = 'AKO';
+ }
+```
+
+## A Basic Project Setup using Bootstrap for Styling
 1. Install bootstrap 
-npm install --save bootstrap@3
+```sh
+ npm install --save bootstrap
+```
 2. Add to angular.json to styles
-"styles": [
-"node_modules/bootstrap/dist/css/bootstrap.min.css",
+```sh
+ "styles": [
+ "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css" 
+```
