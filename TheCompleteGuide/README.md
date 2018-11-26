@@ -52,3 +52,12 @@ b. add in imports
  "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css" 
 ```
+## The Basics
+1. Load proper componet 
+```sh
+main.ts -> bootstrapModule(AppModule) -> import { AppModule } from './app/app.module'; -> /app/app.module -> bootstrap: [AppComponent] -> import { AppComponent } from './app.component'; -> templateUrl: './app.component.html',
+```
+2. Components
+
+- Creating a New Component
+must be registred in app.module.ts
