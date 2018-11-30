@@ -61,3 +61,5 @@ main.ts -> bootstrapModule(AppModule) -> import { AppModule } from './app/app.mo
 
 - Creating a New Component
 must be registred in app.module.ts
+
+ng generate component servers or just ng g c servers
