@@ -63,3 +63,31 @@ main.ts -> bootstrapModule(AppModule) -> import { AppModule } from './app/app.mo
 must be registred in app.module.ts
 
 ng generate component servers or just ng g c servers
+
+Databinding = Communication
+
+TypeScript (Business Logic) -> output data -> template (HTML)
+String Interpolation({{ data }})
+Property Binding ([property]="data")
+
+TypeScript (Business Logic) <- output data -> template (HTML)
+Event Binding ((event)="expression")
+
+Both: two-way-binding ([(ngModel)]="data")
+
+Use both add
+import { FormsModule } from '@angular/forms'
+in 
+app.module.ts 
+
+import { FormsModule } from '@angular/forms';
+
+[...]
+
+@NgModule({
+  imports: [
+    [...]
+    FormsModule
+  ],
+  [...]
+})
