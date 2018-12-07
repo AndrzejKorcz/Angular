@@ -61,9 +61,9 @@ main.ts -> bootstrapModule(AppModule) -> import { AppModule } from './app/app.mo
 
 - Creating a New Component
 must be registred in app.module.ts
-
+```sh
 ng generate component servers or just ng g c servers
-
+```
 Databinding = Communication
 
 TypeScript (Business Logic) -> output data -> template (HTML)
