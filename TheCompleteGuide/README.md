@@ -80,6 +80,7 @@ import { FormsModule } from '@angular/forms'
 in 
 app.module.ts 
 
+```sh
 import { FormsModule } from '@angular/forms';
 
 [...]
@@ -91,3 +92,4 @@ import { FormsModule } from '@angular/forms';
   ],
   [...]
 })
+```
