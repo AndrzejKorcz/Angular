@@ -1,0 +1,35 @@
+
+
+
+<div class='card'>
+  <!-- <span>returnValue: {{retValue}}</span> -->
+  <div class='table-responsive'>
+    <table class='table table-striped'
+           *ngIf='jobs$ | async as errjobs else loadingTemplate'>
+      <thead>
+        <tr>
+          <th>Job Name</th>
+          <th>Job Status</th>
+          <th>Job Type</th>
+          <th>Job Subsystem</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor='let job of errjobs'>
+          <td>
+              <a [routerLink]="['/msgwjobs', job.JobName]">
+                {{ job.JobName | convertToCharacter: '-' :'/'}}
+              </a>
+          </td>
+          <td>{{ job.JobStatus }}</td>
+          <td>{{ job.JobType }}</td>
+          <td>{{ job.Subsystem }}</td>
+        </tr>
+      </tbody>
+    </table>
+    <ng-template #loadingTemplate>
+      <app-loading-spinner></app-loading-spinner>
+    </ng-template>
+  </div>
+</div>
+
